@@ -1,0 +1,32 @@
+[I 11:00:55.460 LabApp] JupyterLab extension loaded from /home/agribul/anaconda3/lib/python3.8/site-packages/jupyterlab
+[I 11:00:55.460 LabApp] JupyterLab application directory is /home/agribul/anaconda3/share/jupyter/lab
+[I 11:00:55.461 LabApp] Serving notebooks from local directory: /home/agribul/DeepLearningExamples/PyTorch/SpeechSynthesis/FastPitch
+[I 11:00:55.461 LabApp] The Jupyter Notebook is running at:
+[I 11:00:55.461 LabApp] http://localhost:8303/?token=ab445a60d7d727c08b9e6ef0e2d7c720d6ced457cb5e15d7
+[I 11:00:55.461 LabApp]  or http://127.0.0.1:8303/?token=ab445a60d7d727c08b9e6ef0e2d7c720d6ced457cb5e15d7
+[I 11:00:55.461 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 11:00:55.463 LabApp] No web browser found: could not locate runnable browser.
+[C 11:00:55.463 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/agribul/.local/share/jupyter/runtime/nbserver-1686240-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8303/?token=ab445a60d7d727c08b9e6ef0e2d7c720d6ced457cb5e15d7
+     or http://127.0.0.1:8303/?token=ab445a60d7d727c08b9e6ef0e2d7c720d6ced457cb5e15d7
+[I 11:01:32.952 LabApp] 302 GET /?token=ab445a60d7d727c08b9e6ef0e2d7c720d6ced457cb5e15d7 (127.0.0.1) 0.54ms
+[W 11:01:33.791 LabApp] Could not determine jupyterlab build status without nodejs
+[W 11:01:33.967 LabApp] 404 GET /api/contents/EmphasisEnrichment.ipynb?content=0&1651737720200 (127.0.0.1): No such file or directory: EmphasisEnrichment.ipynb
+[W 11:01:33.968 LabApp] No such file or directory: EmphasisEnrichment.ipynb
+[W 11:01:33.968 LabApp] 404 GET /api/contents/EmphasisEnrichment.ipynb?content=0&1651737720200 (127.0.0.1) 0.92ms referer=http://localhost:8303/lab
+TermSocket.open: 1
+[I 11:01:34.024 LabApp] New terminal with specified name: 1
+TermSocket.open: Opened 1
+[W 11:01:34.611 LabApp] 404 GET /api/contents/data-pipelines/data?1651737720832 (127.0.0.1): No such file or directory: data-pipelines/data
+[W 11:01:34.611 LabApp] No such file or directory: data-pipelines/data
+[W 11:01:34.611 LabApp] 404 GET /api/contents/data-pipelines/data?1651737720832 (127.0.0.1) 1.05ms referer=http://localhost:8303/lab
+[I 11:01:37.831 LabApp] Creating new notebook in /
+[I 11:01:38.028 LabApp] Kernel started: 708710e2-fe0c-4cec-a721-bfc48e6d387b
+[I 11:01:38.361 LabApp] Starting buffering for 708710e2-fe0c-4cec-a721-bfc48e6d387b:c5cbca01-4bc6-46e3-8bc0-e4b7bf9f3816
+[C 11:02:59.026 LabApp] received signal 15, stopping
+[I 11:02:59.027 LabApp] Shutting down 1 kernel
+[I 11:02:59.228 LabApp] Kernel shutdown: 708710e2-fe0c-4cec-a721-bfc48e6d387b
