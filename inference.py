@@ -48,6 +48,27 @@ CHECKPOINT_SPECIFIC_ARGS = [
     'symbol_set', 'max_wav_value', 'prepend_space_to_text',
     'append_space_to_text']
 
+def load_model_from_ckpt(checkpoint_path, ema, model):
+
+    checkpoint_data = torch.load(checkpoint_path)
+    status = ''
+
+    if 'state_dict' in checkpoint_data:
+        sd = checkpoint_data['state_dict']
+        if ema and 'ema_state_dict' in checkpoint_data:
+            sd = checkpoint_data['ema_state_dict']
+            status += ' (EMA)'
+        elif ema and not 'ema_state_dict' in checkpoint_data:
+            print(f'WARNING: EMA weights missing for {checkpoint_data}')
+
+        if any(key.startswith('module.') for key in sd):
+            sd = {k.replace('module.', ''): v for k,v in sd.items()}
+        status += ' ' + str(model.load_state_dict(sd, strict=False))
+    else:
+        model = checkpoint_data['model']
+    print(f'Loaded {checkpoint_path}{status}')
+
+    return model
 
 def parse_args(parser):
     """
